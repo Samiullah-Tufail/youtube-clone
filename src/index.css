@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+
+.sidebar-li {
+  @apply flex items-center text-gray-200 my-6 py-2 px-4 rounded-3xl cursor-pointer hover:bg-red-color transition duration-150;
+}
+@tailwind utilities;
+
+@layer utilities {
+  .bg-red-color {
+    background-color: #fc1503;
+  }
+  .red-color {
+    color: #fc1503;
+  }
+  .bg-body {
+    background-color: #0f0f0f;
+  }
+  /* .active {
+    color: white;
+    background-color: #fc1503;
+  } */
+  .category-bg {
+    background-color: #282828;
+  }
+  .customborder-55 {
+    border: 24px solid #0f0f0f;
+  }
+  .card-width {
+    width: 42%;
+  }
+  .card-width-27 {
+    width: 27%;
+  }
+  .card-width-98 {
+    width: 98%;
+  }
+}
+.iconhover:hover i {
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .card-width-mobile {
+    width: 70%;
+  }
+}
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
